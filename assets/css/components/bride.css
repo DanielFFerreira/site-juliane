@@ -328,6 +328,20 @@
   background: linear-gradient(90deg, var(--color-gold), var(--color-rose));
 }
 
+
+.bride-section__closing {
+  position: relative;
+  z-index: 1;
+  max-width: 44rem;
+  margin: 3rem auto 0;
+  color: var(--color-ink-soft);
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-style: italic;
+  line-height: 1.45;
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .bride-intro {
     grid-template-columns: 1fr;
