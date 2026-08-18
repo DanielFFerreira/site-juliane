@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Retratos, detalhes e palavras reunidos com carinho para Juliane Leal Rodrigues.">
+    <meta name="theme-color" content="#fbf7f8">
+
+    <script>
+        (() => {
+            let savedTheme = null;
+
+            try {
+                savedTheme = localStorage.getItem("juliane-theme");
+            } catch {
+                // Continue with the operating-system preference when storage is unavailable.
+            }
+
+            const theme = savedTheme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            document.documentElement.dataset.theme = theme;
+        })();
+    </script>
+
+    <title>Juliane Leal Rodrigues | Feito com carinho</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.1.0/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="site-texture" aria-hidden="true"></div>
+
+    <header class="site-header js-site-header" id="topo">
+        <div class="container header__inner">
+            <a class="brand" href="#topo" aria-label="Voltar ao início">
+                <span class="brand__mark" aria-hidden="true">J</span>
+
+                <span class="brand__copy">
+                    <strong>Juliane</strong>
+                    <small>Leal Rodrigues</small>
+                </span>
+            </a>
+
+            <div class="header__actions">
+                <button class="theme-toggle js-theme-toggle" type="button" aria-label="Ativar modo escuro"
+                    title="Ativar modo escuro">
+                    <i class="ri-moon-line" aria-hidden="true"></i>
+                </button>
+
+                <button class="nav-toggle js-nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+                    aria-controls="main-navigation">
+                    <i class="ri-menu-3-line" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <nav class="site-nav js-site-nav" id="main-navigation" aria-label="Navegação principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#detalhes">Detalhes</a>
+                <a href="#momentos">Momentos</a>
+                <a href="#noiva">Noiva</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#poemas">Palavras</a>
+                <a class="site-nav__special" href="#para-ju">
+                    <span>Para você</span>
+                    <i class="ri-heart-3-line" aria-hidden="true"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section section--hero" aria-labelledby="hero-title">
+            <div class="hero__glow hero__glow--rose" aria-hidden="true"></div>
+            <div class="hero__glow hero__glow--lilac" aria-hidden="true"></div>
+
+            <div class="container hero__grid">
+                <div class="hero__content reveal">
+                    <div class="eyebrow">
+                        <i class="ri-sparkling-2-line" aria-hidden="true"></i>
+                        <span>Um retrato feito com calma</span>
+                    </div>
+
+                    <h1 class="hero__title" id="hero-title">
+                        Juliane,
+                        <em>do seu jeito.</em>
+                    </h1>
+
+                    <p class="hero__lead">
+                        Este lugar nasceu das coisas que fui percebendo: o cuidado nas pequenas atitudes,
+                        a coragem nos dias difíceis e a delicadeza que você leva até para os dias comuns.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a class="button button--primary" href="#momentos">
+                            <span>Rever momentos</span>
+                            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="button button--soft" href="#poemas">
+                            <i class="ri-quill-pen-line" aria-hidden="true"></i>
+                            <span>Ler os bilhetes</span>
+                        </a>
+                    </div>
+
+                    <div class="hero__signature">
+                        <span class="hero__signature-line" aria-hidden="true"></span>
+                        <span>feito de detalhes, respeito e carinho</span>
+                    </div>
+                </div>
+
+                <div class="hero__visual reveal reveal--delay-1">
+                    <div class="hero-photo">
+                        <div class="hero-photo__frame">
+                            <img src="assets/images/gallery/juliane-retrato-07.webp" alt="Retrato de Juliane sorrindo">
+                        </div>
+
+                        <span class="hero-photo__index">01 / começo</span>
+
+                        <div class="hero-photo__caption">
+                            <i class="ri-double-quotes-l" aria-hidden="true"></i>
+                            <p>Um sorriso tranquilo, desses que fazem a fotografia parecer conversa.</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-note" aria-label="Pequena dedicatória">
+                        <span class="hero-note__icon">
+                            <i class="ri-sparkling-line" aria-hidden="true"></i>
+                        </span>
+
+                        <p>
+                            Antes de qualquer frase bonita, este é só um jeito de dizer:
+                            eu vejo e admiro quem você é.
+                        </p>
+                    </div>
+
+                    <div class="hero-stamp" aria-hidden="true">
+                        <i class="ri-heart-3-line"></i>
+                        <span>feito<br>para Ju</span>
+                    </div>
+                </div>
+            </div>
+
+            <a class="scroll-cue" href="#sobre" aria-label="Ir para a próxima seção">
+                <span>role devagar</span>
+                <i class="ri-arrow-down-line" aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <section class="section letter" id="sobre" aria-labelledby="letter-title">
+            <div class="container letter__grid">
+                <div class="letter__aside reveal">
+                    <span class="letter__number">02</span>
+                    <span class="letter__line" aria-hidden="true"></span>
+                    <span class="letter__label">uma pequena carta</span>
+                </div>
+
+                <article class="letter__paper reveal reveal--delay-1">
+                    <div class="letter__topline">
+                        <span>Bebedouro, SP</span>
+                        <i class="ri-heart-2-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h2 id="letter-title">Juliane,</h2>
+
+                    <p>
+                        A gente se conheceu no Senac. É uma lembrança simples, mas importante para mim,
+                        porque foi ali que comecei a conhecer seu jeito: atencioso, inteligente e mais forte do que você
+                        costuma mostrar.
+                    </p>
+
+                    <p>
+                        Você nasceu em 28 de abril. Não sei quanto dessa firmeza vem de Touro, mas reconheço em você
+                        a determinação de quem enfrenta o que precisa sem perder a ternura. Sua coragem não faz barulho;
+                        aparece no modo como você segue.
+                    </p>
+
+                    <p>
+                        Admiro também sua bondade, sua humildade e a atenção que você dá às pessoas. São qualidades
+                        que aparecem sem anúncio: numa conversa, num cuidado, numa receita feita para alguém.
+                    </p>
+
+                    <p>
+                        Este site não tenta resumir você, nem colocar palavras na sua boca. Ele reúne algumas
+                        fotografias
+                        e coisas que observei com carinho, sabendo que uma pessoa é sempre maior do que qualquer
+                        homenagem.
+                    </p>
+
+                    <p>
+                        Sou grato pelo que já pude conhecer e compartilhar. Há muito valor no seu jeito de cuidar,
+                        de aprender, de sorrir e de continuar, mesmo quando nem tudo é fácil.
+                    </p>
+
+                    <p>
+                        Por isso fiz esta página com calma: para agradecer pelo que foi vivido e desejar, sem pressa,
+                        que a vida ainda lhe traga muitos dias bons.
+                    </p>
+
+                    <div class="letter__signature">
+                        <span>com carinho,</span>
+                        <strong>para você.</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section essence" aria-labelledby="essence-title">
+            <div class="container essence__grid">
+                <div class="section-heading reveal">
+                    <div class="eyebrow">
+                        <i class="ri-flower-line" aria-hidden="true"></i>
+                        <span>Sobre Juliane</span>
+                    </div>
+
+                    <h2 id="essence-title">
+                        Há muito de você
+                        <em>nas coisas que faz.</em>
+                    </h2>
+
+                    <p>
+                        Sua inteligência, sua bondade e sua força aparecem no cotidiano: na forma como você observa,
+                        aprende, acolhe e toma posição quando é preciso.
+                    </p>
+                </div>
+
+                <div class="essence__content reveal reveal--delay-1">
+                    <blockquote class="essence-quote">
+                        <i class="ri-double-quotes-l" aria-hidden="true"></i>
+                        <p>
+                            Você não precisa ocupar o centro da conversa.
+                            Seu jeito atento já diz bastante.
+                        </p>
+                    </blockquote>
+
+                    <div class="trait-grid" aria-label="Qualidades de Juliane">
+                        <article class="trait-card">
+                            <span class="trait-card__icon">
+                                <i class="ri-hand-heart-line" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <h3>Gentileza</h3>
+                                <p>Você percebe o que o outro precisa e ajuda sem transformar isso em anúncio.</p>
+                            </div>
+                        </article>
+
+                        <article class="trait-card">
+                            <span class="trait-card__icon">
+                                <i class="ri-heart-3-line" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <h3>Carinho</h3>
+                                <p>Está nas mensagens, na escuta e no tempo que você oferece de verdade.</p>
+                            </div>
+                        </article>
+
+                        <article class="trait-card">
+                            <span class="trait-card__icon">
+                                <i class="ri-shield-line" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <h3>Doçura</h3>
+                                <p>Aparece no sorriso, no jeito com os animais e na delicadeza das coisas comuns.</p>
+                            </div>
+                        </article>
+
+                        <article class="trait-card">
+                            <span class="trait-card__icon">
+                                <i class="ri-chat-heart-line" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <h3>Verdade</h3>
+                                <p>Você consegue ser firme e sincera sem deixar de ser humilde e respeitosa.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section little-things" id="detalhes" aria-labelledby="details-title">
+            <div class="container">
+                <div class="section-intro reveal">
+                    <div>
+                        <div class="eyebrow">
+                            <i class="ri-focus-3-line" aria-hidden="true"></i>
+                            <span>Pequenas coisas</span>
+                        </div>
+
+                        <h2 id="details-title">Coisas suas que dizem muito.</h2>
+                    </div>
+
+                    <p>
+                        Um sorriso sem pose, uma receita, uma mensagem no meio do dia. É nessas cenas pequenas
+                        que seu jeito aparece com mais clareza.
+                    </p>
+                </div>
+
+                <div class="detail-grid">
+                    <article class="detail-card reveal">
+                        <span class="detail-card__index">01</span>
+                        <i class="ri-emotion-happy-line" aria-hidden="true"></i>
+                        <h3>Esse sorriso</h3>
+                        <p>Aquele que aparece sem pose, quando a conversa está boa e você esquece a câmera.</p>
+                    </article>
+
+                    <article class="detail-card reveal reveal--delay-1">
+                        <span class="detail-card__index">02</span>
+                        <i class="ri-restaurant-2-line" aria-hidden="true"></i>
+                        <h3>Uma receita</h3>
+                        <p>Você escolhe os ingredientes, cuida do tempo e serve. O carinho também mora nesse processo.
+                        </p>
+                    </article>
+
+                    <article class="detail-card reveal reveal--delay-2">
+                        <span class="detail-card__index">03</span>
+                        <i class="ri-bear-smile-line" aria-hidden="true"></i>
+                        <h3>Os animais</h3>
+                        <p>Com os gatos, seu cuidado fica simples: companhia, colo e respeito pelo tempo deles.</p>
+                    </article>
+
+                    <article class="detail-card reveal">
+                        <span class="detail-card__index">04</span>
+                        <i class="ri-home-heart-line" aria-hidden="true"></i>
+                        <h3>A família</h3>
+                        <p>Vozes conhecidas, histórias repetidas e a liberdade de rir das mesmas coisas outra vez.</p>
+                    </article>
+
+                    <article class="detail-card reveal reveal--delay-1">
+                        <span class="detail-card__index">05</span>
+                        <i class="ri-chat-heart-line" aria-hidden="true"></i>
+                        <h3>O cuidado</h3>
+                        <p>Você pergunta se está tudo bem e espera a resposta. Parece pouco, mas não é.</p>
+                    </article>
+
+                    <article class="detail-card detail-card--accent reveal reveal--delay-2">
+                        <span class="detail-card__index">06</span>
+                        <i class="ri-time-line" aria-hidden="true"></i>
+                        <h3>O que fica</h3>
+                        <p>No fim, são os dias comuns que contam melhor quem esteve de verdade por perto.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section moments" id="momentos" aria-labelledby="moments-title">
+            <div class="container">
+                <div class="section-intro reveal">
+                    <div>
+                        <div class="eyebrow">
+                            <i class="ri-camera-3-line" aria-hidden="true"></i>
+                            <span>Cenas do cotidiano</span>
+                        </div>
+
+                        <h2 id="moments-title">Quatro cenas, muito do seu jeito.</h2>
+                    </div>
+
+                    <p>
+                        As fotografias não contam tudo. Mas ajudam a voltar ao cheiro da cozinha, ao sossego dos gatos,
+                        às conversas em família e aos afetos construídos com respeito.
+                    </p>
+                </div>
+
+                <div class="swiper moments-swiper js-moments-swiper reveal reveal--delay-1">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide memory-card">
+                            <div class="memory-card__media">
+                                <img src="assets/images/cozinhar.png" alt="Juliane preparando uma receita">
+
+                                <span class="memory-card__badge">
+                                    <i class="ri-restaurant-2-line" aria-hidden="true"></i>
+                                    Cozinhar
+                                </span>
+                            </div>
+
+                            <div class="memory-card__body">
+                                <span class="memory-card__number">01</span>
+                                <h3>Cuidado servido à mesa.</h3>
+                                <p>
+                                    Há atenção na escolha, paciência no preparo e alegria em dividir o que ficou pronto.
+                                    Cozinhar é um dos seus jeitos mais concretos de cuidar.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="swiper-slide memory-card">
+                            <div class="memory-card__media">
+                                <img src="assets/images/bichinhos.png"
+                                    alt="Juliane em um momento de carinho com os gatos">
+
+                                <span class="memory-card__badge">
+                                    <i class="ri-bear-smile-line" aria-hidden="true"></i>
+                                    Gatos
+                                </span>
+                            </div>
+
+                            <div class="memory-card__body">
+                                <span class="memory-card__number">02</span>
+                                <h3>Um carinho sem cerimônia.</h3>
+                                <p>
+                                    Com eles, não é preciso explicar nada: basta chegar perto, respeitar o tempo
+                                    e deixar que a confiança faça o resto.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="swiper-slide memory-card">
+                            <div class="memory-card__media">
+                                <img src="assets/images/familia.png" alt="Juliane reunida com a família">
+
+                                <span class="memory-card__badge">
+                                    <i class="ri-home-heart-line" aria-hidden="true"></i>
+                                    Família
+                                </span>
+                            </div>
+
+                            <div class="memory-card__body">
+                                <span class="memory-card__number">03</span>
+                                <h3>Onde você pode ser você.</h3>
+                                <p>
+                                    Família também é isso: apelidos antigos, conversas atravessadas, domingos comuns
+                                    e a sensação de não precisar explicar cada parte de si.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="swiper-slide memory-card">
+                            <div class="memory-card__media">
+                                <img src="assets/images/amores.png" alt="Juliane em um registro afetivo">
+
+                                <span class="memory-card__badge">
+                                    <i class="ri-heart-2-line" aria-hidden="true"></i>
+                                    Amores
+                                </span>
+                            </div>
+
+                            <div class="memory-card__body">
+                                <span class="memory-card__number">04</span>
+                                <h3>Afeto também é respeito.</h3>
+                                <p>
+                                    Gostar de alguém também é saber ouvir, respeitar limites e cuidar sem prender.
+                                    É deixar que a proximidade seja escolha, nunca cobrança.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="carousel-controls">
+                        <div class="carousel-controls__status">
+                            <i class="ri-drag-move-2-line" aria-hidden="true"></i>
+                            <span>arraste para descobrir</span>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="carousel-controls__buttons">
+                            <button class="icon-button js-carousel-prev" type="button" aria-label="Momento anterior">
+                                <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                            </button>
+
+                            <button class="icon-button js-carousel-next" type="button" aria-label="Próximo momento">
+                                <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section bride-section" id="noiva" aria-labelledby="bride-title">
+            <div class="bride-section__glow bride-section__glow--gold" aria-hidden="true"></div>
+            <div class="bride-section__glow bride-section__glow--rose" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="bride-intro reveal">
+                    <div>
+                        <div class="eyebrow">
+                            <i class="ri-sparkling-2-line" aria-hidden="true"></i>
+                            <span>Um futuro imaginado com calma</span>
+                        </div>
+
+                        <h2 id="bride-title">Esperança que se, <em>veste de futuro.</em></h2>
+
+                    </div>
+
+                    <div class="bride-intro__copy">
+                        <p>
+                            Estas imagens não são promessa nem roteiro. São apenas uma possibilidade bonita imaginada
+                            com leveza: o vestido, o véu, a fé e um sorriso diante do que a vida ainda pode trazer.
+                        </p>
+
+                        <span class="bride-intro__note">
+                            <i class="ri-shining-line" aria-hidden="true"></i>
+                            o futuro pode ser pensado com esperança e liberdade
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bride-feature reveal reveal--delay-1">
+                    <button class="bride-feature__main js-gallery-open" type="button" data-lightbox-group="noiva"
+                        data-gallery-image="assets/images/gallery/juliane-noiva-01.webp"
+                        data-gallery-caption="Um sonho possível" aria-label="Ampliar foto: Um sonho possível">
+                        <img src="assets/images/gallery/juliane-noiva-01.webp"
+                            alt="Juliane de noiva iluminada por luz dourada" loading="lazy">
+
+                        <span class="bride-feature__overlay">
+                            <span class="bride-feature__kicker">01 · possibilidade</span>
+                            <strong>Um sonho possível</strong>
+                            <small>um retrato de esperança, sem apressar o amanhã</small>
+                        </span>
+                    </button>
+
+                    <div class="bride-feature__side">
+                        <button class="bride-feature__small js-gallery-open" type="button" data-lightbox-group="noiva"
+                            data-gallery-image="assets/images/gallery/juliane-noiva-02.webp"
+                            data-gallery-caption="Entre fé e esperança" aria-label="Ampliar foto: Entre fé e esperança">
+                            <img src="assets/images/gallery/juliane-noiva-02.webp"
+                                alt="Juliane de noiva em ângulo lateral sob luz dourada" loading="lazy">
+                            <span>Entre fé e esperança</span>
+                        </button>
+
+                        <button class="bride-feature__small js-gallery-open" type="button" data-lightbox-group="noiva"
+                            data-gallery-image="assets/images/gallery/juliane-noiva-03.webp"
+                            data-gallery-caption="Um instante de serenidade"
+                            aria-label="Ampliar foto: Um instante de serenidade">
+                            <img src="assets/images/gallery/juliane-noiva-03.webp"
+                                alt="Retrato aproximado de Juliane de noiva" loading="lazy">
+                            <span>Um instante de serenidade</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bride-carousel reveal reveal--delay-1">
+                    <div class="bride-carousel__header">
+                        <div>
+                            <span class="bride-carousel__eyebrow">outros ângulos</span>
+                            <h3>A mesma ideia, em retratos diferentes.</h3>
+                        </div>
+
+                        <div class="bride-carousel__controls">
+                            <span class="bride-carousel__counter" aria-live="polite">
+                                <strong class="js-bride-current">01</strong> / 06
+                            </span>
+
+                            <button class="icon-button js-bride-prev" type="button"
+                                aria-label="Foto anterior da seção Noiva">
+                                <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                            </button>
+
+                            <button class="icon-button js-bride-next" type="button"
+                                aria-label="Próxima foto da seção Noiva">
+                                <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="swiper bride-swiper js-bride-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="swiper-slide bride-card">
+                                <button class="bride-card__button js-gallery-open" type="button"
+                                    data-lightbox-group="noiva"
+                                    data-gallery-image="assets/images/gallery/juliane-noiva-04.webp"
+                                    data-gallery-caption="Radiante" aria-label="Ampliar foto: Radiante">
+                                    <img src="assets/images/gallery/juliane-noiva-04.webp"
+                                        alt="Juliane de noiva segurando um buquê" loading="lazy">
+                                    <span class="bride-card__caption"><small>04</small><strong>Radiante</strong></span>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide bride-card">
+                                <button class="bride-card__button js-gallery-open" type="button"
+                                    data-lightbox-group="noiva"
+                                    data-gallery-image="assets/images/gallery/juliane-noiva-05.webp"
+                                    data-gallery-caption="Entre o véu e o silêncio"
+                                    aria-label="Ampliar foto: Entre o véu e o silêncio">
+                                    <img src="assets/images/gallery/juliane-noiva-05.webp"
+                                        alt="Juliane de noiva junto à janela" loading="lazy">
+                                    <span class="bride-card__caption"><small>05</small><strong>Entre o véu e o
+                                            silêncio</strong></span>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide bride-card">
+                                <button class="bride-card__button js-gallery-open" type="button"
+                                    data-lightbox-group="noiva"
+                                    data-gallery-image="assets/images/gallery/juliane-noiva-06.webp"
+                                    data-gallery-caption="Um gesto de gratidão"
+                                    aria-label="Ampliar foto: Um gesto de gratidão">
+                                    <img src="assets/images/gallery/juliane-noiva-06.webp"
+                                        alt="Juliane de noiva em luz suave" loading="lazy">
+                                    <span class="bride-card__caption"><small>06</small><strong>Um gesto de
+                                            gratidão</strong></span>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide bride-card">
+                                <button class="bride-card__button js-gallery-open" type="button"
+                                    data-lightbox-group="noiva"
+                                    data-gallery-image="assets/images/gallery/juliane-noiva-07.webp"
+                                    data-gallery-caption="Delicadeza" aria-label="Ampliar foto: Delicadeza">
+                                    <img src="assets/images/gallery/juliane-noiva-07.webp"
+                                        alt="Juliane de noiva em outro ângulo" loading="lazy">
+                                    <span
+                                        class="bride-card__caption"><small>07</small><strong>Delicadeza</strong></span>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide bride-card">
+                                <button class="bride-card__button js-gallery-open" type="button"
+                                    data-lightbox-group="noiva"
+                                    data-gallery-image="assets/images/gallery/juliane-noiva-08.webp"
+                                    data-gallery-caption="Um instante sereno"
+                                    aria-label="Ampliar foto: Um instante sereno">
+                                    <img src="assets/images/gallery/juliane-noiva-08.webp"
+                                        alt="Juliane de noiva olhando para baixo" loading="lazy">
+                                    <span class="bride-card__caption"><small>08</small><strong>Um instante
+                                            sereno</strong></span>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide bride-card">
+                                <button class="bride-card__button js-gallery-open" type="button"
+                                    data-lightbox-group="noiva"
+                                    data-gallery-image="assets/images/gallery/juliane-noiva-09.webp"
+                                    data-gallery-caption="Em oração" aria-label="Ampliar foto: Em oração">
+                                    <img src="assets/images/gallery/juliane-noiva-09.webp"
+                                        alt="Juliane de noiva com as mãos juntas em oração" loading="lazy">
+                                    <span class="bride-card__caption"><small>09</small><strong>Em oração</strong></span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="bride-progress" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section juliane-gallery" id="galeria" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-intro reveal">
+                    <div>
+                        <div class="eyebrow">
+                            <i class="ri-gallery-line" aria-hidden="true"></i>
+                            <span>Galeria Juliane</span>
+                        </div>
+
+                        <h2 id="gallery-title">Retratos de muitos jeitos seus.</h2>
+                    </div>
+
+                    <p>
+                        Há fotos espontâneas, sorrisos abertos e dias mais arrumados. Juntas, elas não explicam quem
+                        você é; apenas mostram alguns ângulos de uma história maior.
+                    </p>
+                </div>
+
+                <div class="gallery-shell reveal reveal--delay-1">
+                    <div class="gallery-shell__topbar">
+                        <div class="gallery-shell__counter" aria-live="polite">
+                            <span class="js-gallery-current">01</span>
+                            <span class="gallery-shell__divider">/</span>
+                            <span>08</span>
+                        </div>
+
+                        <div class="gallery-shell__hint">
+                            <i class="ri-drag-move-2-line" aria-hidden="true"></i>
+                            <span>arraste, toque ou abra a foto</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper juliane-gallery__swiper js-juliane-gallery">
+                        <div class="swiper-wrapper">
+                            <article class="swiper-slide gallery-card">
+                                <button class="gallery-card__button js-gallery-open" type="button"
+                                    data-gallery-image="assets/images/gallery/juliane-retrato-01.webp"
+                                    data-gallery-caption="Sorriso tranquilo"
+                                    aria-label="Abrir foto 01: Sorriso tranquilo">
+                                    <figure class="gallery-card__figure">
+                                        <img src="assets/images/gallery/juliane-retrato-01.webp"
+                                            alt="Juliane sorrindo em um retrato tranquilo" loading="lazy">
+
+                                        <figcaption class="gallery-card__caption">
+                                            <span class="gallery-card__category">Retrato</span>
+
+                                            <div class="gallery-card__title-row">
+                                                <div>
+                                                    <span class="gallery-card__number">01</span>
+                                                    <h3>Sorriso tranquilo</h3>
+                                                </div>
+
+                                                <span class="gallery-card__open-icon" aria-hidden="true">
+                                                    <i class="ri-arrow-right-up-line"></i>
+                                                </span>
+                                            </div>
+
+                                            <p>Um sorriso discreto e um olhar calmo, sem pose além da necessária.</p>
+                                        </figcaption>
+                                    </figure>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide gallery-card">
+                                <button class="gallery-card__button js-gallery-open" type="button"
+                                    data-gallery-image="assets/images/gallery/juliane-retrato-02.webp"
+                                    data-gallery-caption="Fim de tarde" aria-label="Abrir foto 02: Fim de tarde">
+                                    <figure class="gallery-card__figure">
+                                        <img src="assets/images/gallery/juliane-retrato-02.webp"
+                                            alt="Juliane em fim de tarde" loading="lazy">
+
+                                        <figcaption class="gallery-card__caption">
+                                            <span class="gallery-card__category">Retrato</span>
+
+                                            <div class="gallery-card__title-row">
+                                                <div>
+                                                    <span class="gallery-card__number">02</span>
+                                                    <h3>Fim de tarde</h3>
+                                                </div>
+
+                                                <span class="gallery-card__open-icon" aria-hidden="true">
+                                                    <i class="ri-arrow-right-up-line"></i>
+                                                </span>
+                                            </div>
+
+                                            <p>O fim da tarde deixou as cores mais suaves e o sorriso fez o resto.</p>
+                                        </figcaption>
+                                    </figure>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide gallery-card">
+                                <button class="gallery-card__button js-gallery-open" type="button"
+                                    data-gallery-image="assets/images/gallery/juliane-retrato-03.webp"
+                                    data-gallery-caption="Jeito acolhedor" aria-label="Abrir foto 03: Jeito acolhedor">
+                                    <figure class="gallery-card__figure">
+                                        <img src="assets/images/gallery/juliane-retrato-03.webp"
+                                            alt="Juliane em doce presença" loading="lazy">
+
+                                        <figcaption class="gallery-card__caption">
+                                            <span class="gallery-card__category">Retrato</span>
+
+                                            <div class="gallery-card__title-row">
+                                                <div>
+                                                    <span class="gallery-card__number">03</span>
+                                                    <h3>Jeito acolhedor</h3>
+                                                </div>
+
+                                                <span class="gallery-card__open-icon" aria-hidden="true">
+                                                    <i class="ri-arrow-right-up-line"></i>
+                                                </span>
+                                            </div>
+
+                                            <p>Os óculos, o olhar atento e uma expressão que parece pronta para escutar.
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide gallery-card">
+                                <button class="gallery-card__button js-gallery-open" type="button"
+                                    data-gallery-image="assets/images/gallery/juliane-retrato-04.webp"
+                                    data-gallery-caption="Elegância serena"
+                                    aria-label="Abrir foto 04: Elegância serena">
+                                    <figure class="gallery-card__figure">
+                                        <img src="assets/images/gallery/juliane-retrato-04.webp"
+                                            alt="Juliane em elegância serena" loading="lazy">
+
+                                        <figcaption class="gallery-card__caption">
+                                            <span class="gallery-card__category">Retrato</span>
+
+                                            <div class="gallery-card__title-row">
+                                                <div>
+                                                    <span class="gallery-card__number">04</span>
+                                                    <h3>Elegância serena</h3>
+                                                </div>
+
+                                                <span class="gallery-card__open-icon" aria-hidden="true">
+                                                    <i class="ri-arrow-right-up-line"></i>
+                                                </span>
+                                            </div>
+
+                                            <p>Azul profundo, postura tranquila e uma elegância que não depende de
+                                                chamar atenção.</p>
+                                        </figcaption>
+                                    </figure>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide gallery-card">
+                                <button class="gallery-card__button js-gallery-open" type="button"
+                                    data-gallery-image="assets/images/gallery/juliane-retrato-05.webp"
+                                    data-gallery-caption="Bem de perto" aria-label="Abrir foto 05: Bem de perto">
+                                    <figure class="gallery-card__figure">
+                                        <img src="assets/images/gallery/juliane-retrato-05.webp"
+                                            alt="Juliane em bem de perto" loading="lazy">
+
+                                        <figcaption class="gallery-card__caption">
+                                            <span class="gallery-card__category">Retrato</span>
+
+                                            <div class="gallery-card__title-row">
+                                                <div>
+                                                    <span class="gallery-card__number">05</span>
+                                                    <h3>Bem de perto</h3>
+                                                </div>
+
+                                                <span class="gallery-card__open-icon" aria-hidden="true">
+                                                    <i class="ri-arrow-right-up-line"></i>
+                                                </span>
+                                            </div>
+
+                                            <p>Um enquadramento próximo e espontâneo, como uma pausa breve no meio da
+                                                conversa.</p>
+                                        </figcaption>
+                                    </figure>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide gallery-card">
+                                <button class="gallery-card__button js-gallery-open" type="button"
+                                    data-gallery-image="assets/images/gallery/juliane-retrato-06.webp"
+                                    data-gallery-caption="Entre flores" aria-label="Abrir foto 06: Entre flores">
+                                    <figure class="gallery-card__figure">
+                                        <img src="assets/images/gallery/juliane-retrato-06.webp"
+                                            alt="Juliane em entre flores e luz" loading="lazy">
+
+                                        <figcaption class="gallery-card__caption">
+                                            <span class="gallery-card__category">Retrato</span>
+
+                                            <div class="gallery-card__title-row">
+                                                <div>
+                                                    <span class="gallery-card__number">06</span>
+                                                    <h3>Entre flores</h3>
+                                                </div>
+
+                                                <span class="gallery-card__open-icon" aria-hidden="true">
+                                                    <i class="ri-arrow-right-up-line"></i>
+                                                </span>
+                                            </div>
+
+                                            <p>As flores acompanham a cena sem tirar dela o que importa: seu jeito
+                                                natural.</p>
+                                        </figcaption>
+                                    </figure>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide gallery-card">
+                                <button class="gallery-card__button js-gallery-open" type="button"
+                                    data-gallery-image="assets/images/gallery/juliane-retrato-07.webp"
+                                    data-gallery-caption="Olhar de casa" aria-label="Abrir foto 07: Olhar de casa">
+                                    <figure class="gallery-card__figure">
+                                        <img src="assets/images/gallery/juliane-retrato-07.webp"
+                                            alt="Juliane em olhar de casa" loading="lazy">
+
+                                        <figcaption class="gallery-card__caption">
+                                            <span class="gallery-card__category">Retrato</span>
+
+                                            <div class="gallery-card__title-row">
+                                                <div>
+                                                    <span class="gallery-card__number">07</span>
+                                                    <h3>Olhar de casa</h3>
+                                                </div>
+
+                                                <span class="gallery-card__open-icon" aria-hidden="true">
+                                                    <i class="ri-arrow-right-up-line"></i>
+                                                </span>
+                                            </div>
+
+                                            <p>Uma fotografia à vontade, com a familiaridade de quem está em um lugar
+                                                conhecido.</p>
+                                        </figcaption>
+                                    </figure>
+                                </button>
+                            </article>
+
+                            <article class="swiper-slide gallery-card">
+                                <button class="gallery-card__button js-gallery-open" type="button"
+                                    data-gallery-image="assets/images/gallery/juliane-retrato-08.webp"
+                                    data-gallery-caption="Azul e sorriso" aria-label="Abrir foto 08: Azul e sorriso">
+                                    <figure class="gallery-card__figure">
+                                        <img src="assets/images/gallery/juliane-retrato-08.webp"
+                                            alt="Juliane em azul e luz" loading="lazy">
+
+                                        <figcaption class="gallery-card__caption">
+                                            <span class="gallery-card__category">Retrato</span>
+
+                                            <div class="gallery-card__title-row">
+                                                <div>
+                                                    <span class="gallery-card__number">08</span>
+                                                    <h3>Azul e sorriso</h3>
+                                                </div>
+
+                                                <span class="gallery-card__open-icon" aria-hidden="true">
+                                                    <i class="ri-arrow-right-up-line"></i>
+                                                </span>
+                                            </div>
+
+                                            <p>Cabelos soltos, sorriso aberto e a tranquilidade de um momento sem
+                                                cerimônia.</p>
+                                        </figcaption>
+                                    </figure>
+                                </button>
+                            </article>
+
+
+                        </div>
+
+                        <div class="gallery-controls">
+                            <div class="gallery-progress swiper-pagination"></div>
+
+                            <div class="gallery-controls__buttons">
+                                <button class="icon-button js-gallery-prev" type="button" aria-label="Foto anterior">
+                                    <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                                </button>
+
+                                <button class="icon-button js-gallery-next" type="button" aria-label="Próxima foto">
+                                    <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-shell__footer">
+                        <span class="gallery-shell__line" aria-hidden="true"></span>
+                        <p>
+                            São só alguns retratos. O restante do seu jeito não cabe numa galeria.
+                        </p>
+                        <i class="ri-sparkling-2-line" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <dialog class="gallery-lightbox js-gallery-lightbox" aria-label="Visualização ampliada da galeria de Juliane">
+            <div class="gallery-lightbox__surface">
+                <button class="gallery-lightbox__close js-gallery-close" type="button" aria-label="Fechar imagem">
+                    <i class="ri-close-line" aria-hidden="true"></i>
+                </button>
+
+                <button class="gallery-lightbox__nav gallery-lightbox__nav--prev js-lightbox-prev" type="button"
+                    aria-label="Imagem anterior">
+                    <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                </button>
+
+                <figure class="gallery-lightbox__figure">
+                    <img class="js-lightbox-image" src="" alt="">
+                    <figcaption class="js-lightbox-caption"></figcaption>
+                </figure>
+
+                <button class="gallery-lightbox__nav gallery-lightbox__nav--next js-lightbox-next" type="button"
+                    aria-label="Próxima imagem">
+                    <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </button>
+            </div>
+        </dialog>
+
+        <section class="section poetic-break" aria-label="Intervalo poético">
+            <div class="container">
+                <div class="poetic-panel reveal">
+                    <span class="poetic-panel__icon" aria-hidden="true">
+                        <i class="ri-double-quotes-l"></i>
+                    </span>
+
+                    <blockquote>
+                        Quando penso em você, não lembro primeiro das grandes cenas.
+                        Lembro de uma conversa, de um sorriso sem pose, de algo feito na cozinha.
+                        <em>Talvez o afeto more justamente aí.</em>
+                    </blockquote>
+
+                    <div class="poetic-panel__footer">
+                        <span>03 / uma pausa</span>
+                        <i class="ri-sparkling-2-line" aria-hidden="true"></i>
+                    </div>
+
+                    <span class="poetic-panel__word" aria-hidden="true">perto</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section memory-mosaic" aria-labelledby="mosaic-title">
+            <div class="container">
+                <div class="mosaic-grid">
+                    <figure class="mosaic-card mosaic-card--tall reveal">
+                        <img src="assets/images/inteligencia.png" alt="Espaço reservado para um detalhe especial">
+                        <figcaption>
+                            <span>Inteligência</span>
+                            <p>Você observa, aprende rápido e costuma perceber relações que passam despercebidas.</p>
+                        </figcaption>
+                    </figure>
+
+                    <article class="mosaic-story reveal reveal--delay-1">
+                        <div class="eyebrow">
+                            <i class="ri-polaroid-line" aria-hidden="true"></i>
+                            <span>Um pouco de você</span>
+                        </div>
+
+                        <h2 id="mosaic-title">
+                            O cotidiano também
+                            <em>conta uma história.</em>
+                        </h2>
+
+                        <p>
+                            Nem todo dia precisa virar uma grande recordação. Um almoço, uma conversa,
+                            um riso fora de hora e até um silêncio confortável já podem dizer bastante.
+                        </p>
+
+                        <div class="mosaic-story__note">
+                            <i class="ri-pushpin-line" aria-hidden="true"></i>
+                            <span>um dia comum, visto com atenção.</span>
+                        </div>
+                    </article>
+
+                    <figure class="mosaic-card reveal">
+                        <img src="assets/images/detalhes.png" alt="Espaço reservado para uma fotografia de afeto">
+                        <figcaption>
+                            <span>Bondade</span>
+                            <p>Sua bondade aparece quando você ajuda sem diminuir ninguém e oferece sem fazer conta.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="mosaic-card reveal reveal--delay-1">
+                        <img src="assets/images/bondade.png" alt="Espaço reservado para uma lembrança ligada ao tempo">
+                        <figcaption>
+                            <span>Tempo</span>
+                            <p>O tempo muda muita coisa, mas não apaga o valor do que foi vivido com respeito.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section poems" id="poemas" aria-labelledby="poems-title">
+            <div class="container">
+                <div class="section-intro reveal">
+                    <div>
+                        <div class="eyebrow">
+                            <i class="ri-quill-pen-line" aria-hidden="true"></i>
+                            <span>Frases e poemas</span>
+                        </div>
+
+                        <h2 id="poems-title">Três bilhetes, sem palavras grandes.</h2>
+                    </div>
+
+                    <p>
+                        Não são definições sobre você. São anotações breves, escritas a partir do que vi
+                        e do que aprendi a admirar.
+                    </p>
+                </div>
+
+                <div class="poem-list">
+                    <article class="poem-item reveal">
+                        <div class="poem-item__meta">
+                            <span>01</span>
+                            <i class="ri-hand-heart-line" aria-hidden="true"></i>
+                        </div>
+                        <div class="poem-item__content">
+                            <h3>Gestos</h3>
+                            <p>
+                                Seu cuidado aparece em verbos simples: perguntar, escutar, preparar, dividir.
+                                É assim, sem discurso, que você mostra o que importa.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="poem-item reveal reveal--delay-1">
+                        <div class="poem-item__meta">
+                            <span>02</span>
+                            <i class="ri-shield-line" aria-hidden="true"></i>
+                        </div>
+                        <div class="poem-item__content">
+                            <h3>Coragem</h3>
+                            <p>
+                                Coragem nem sempre parece coragem por fora. Às vezes é só levantar, resolver
+                                o que precisa e continuar sendo gentil depois de um dia difícil.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="poem-item reveal">
+                        <div class="poem-item__meta">
+                            <span>03</span>
+                            <i class="ri-eye-line" aria-hidden="true"></i>
+                        </div>
+                        <div class="poem-item__content">
+                            <h3>Inteligência</h3>
+                            <p>
+                                Você presta atenção antes de responder, aprende com rapidez e não precisa
+                                saber tudo para fazer uma boa pergunta. Isso também é inteligência.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section quiet" aria-labelledby="quiet-title">
+            <div class="container quiet__content reveal">
+                <span class="quiet__icon" aria-hidden="true">
+                    <i class="ri-heart-add-line"></i>
+                </span>
+                <p>Depois de tantas fotos e palavras, sobra uma certeza bem simples:</p>
+                <h2 id="quiet-title">que bom ter encontrado você.</h2>
+            </div>
+        </section>
+
+        <section class="section final-message" id="para-ju" aria-labelledby="final-title">
+            <div class="container">
+                <article class="final-card reveal">
+                    <div class="final-card__content">
+                        <div class="eyebrow eyebrow--light">
+                            <i class="ri-heart-3-line" aria-hidden="true"></i>
+                            <span>Para Juliane</span>
+                        </div>
+
+                        <h2 id="final-title">
+                            Este lugar foi feito
+                            para dizer uma coisa
+                            <em>simples: obrigado.</em>
+                        </h2>
+
+                        <p>
+                            Obrigado pelo seu jeito gentil, pela coragem que você mostra, pelo que ensinou
+                            sem perceber e pelos momentos que pude compartilhar. Espero que, ao passar por esta página,
+                            você reconheça nela respeito, cuidado e sinceridade.
+                        </p>
+
+                        <div class="final-card__closing">
+                            <i class="ri-sparkling-2-line" aria-hidden="true"></i>
+                            <strong>É só isso. E é de verdade.</strong>
+                        </div>
+                    </div>
+
+                    <div class="final-card__seal" aria-hidden="true">
+                        <span>feito</span>
+                        <strong>com carinho</strong>
+                        <i class="ri-heart-3-fill"></i>
+                        <span>para Ju</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a class="brand" href="#topo">
+                    <span class="brand__mark" aria-hidden="true">J</span>
+                    <span class="brand__copy">
+                        <strong>Juliane</strong>
+                        <small>Leal Rodrigues</small>
+                    </span>
+                </a>
+
+                <p>Um lugar feito com calma para Juliane.</p>
+            </div>
+
+            <div class="footer__links">
+                <span>Contato</span>
+                <a href="mailto:seuemail@exemplo.com">
+                    <i class="ri-mail-line" aria-hidden="true"></i>
+                    <span>seuemail@exemplo.com</span>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="ri-instagram-line" aria-hidden="true"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+
+            <div class="footer__meta">
+
+                <span>
+                    © <span id="current-year"></span>
+                </span>
+
+                <a class="footer__back-to-top" href="#topo" aria-label="Voltar ao topo da página">
+                    <i class="ri-arrow-up-line" aria-hidden="true"></i>
+                    <span>Voltar ao topo</span>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

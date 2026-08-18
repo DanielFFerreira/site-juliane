@@ -1,0 +1,400 @@
+.bride-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18),
+      rgba(246, 235, 229, 0.42)
+    ),
+    var(--color-paper);
+}
+
+.bride-section__glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(10px);
+}
+
+.bride-section__glow--gold {
+  top: 4rem;
+  right: -12rem;
+  width: 30rem;
+  height: 30rem;
+  background: rgba(232, 217, 189, 0.38);
+}
+
+.bride-section__glow--rose {
+  bottom: 8rem;
+  left: -13rem;
+  width: 26rem;
+  height: 26rem;
+  background: rgba(245, 228, 234, 0.58);
+}
+
+.bride-intro {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(18rem, 0.6fr);
+  align-items: end;
+  gap: clamp(2rem, 7vw, 6rem);
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.bride-intro h2 {
+  max-width: 12ch;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3.4rem, 7vw, 6.8rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.88;
+}
+
+.bride-intro h2 em {
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.bride-intro__copy p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  line-height: 1.9;
+}
+
+.bride-intro__note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
+  padding: 0.72rem 1rem;
+  border: 1px solid rgba(184, 149, 96, 0.22);
+  border-radius: var(--radius-pill);
+  background: var(--surface-card);
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.bride-feature {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(15rem, 0.62fr);
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(184, 149, 96, 0.18);
+  border-radius: var(--radius-xl);
+  background: var(--surface-card);
+  box-shadow: var(--shadow-sm);
+}
+
+.bride-feature button,
+.bride-card__button {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: zoom-in;
+}
+
+.bride-feature__main,
+.bride-feature__small {
+  position: relative;
+  overflow: hidden;
+  border-radius: calc(var(--radius-lg) - 0.25rem);
+  background: var(--color-rose-soft);
+}
+
+.bride-feature__main {
+  min-height: clamp(33rem, 66vw, 47rem);
+}
+
+.bride-feature__main img,
+.bride-feature__small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bride-feature__main:hover img,
+.bride-feature__small:hover img {
+  transform: scale(1.025);
+}
+
+.bride-feature__main::after,
+.bride-feature__small::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(38, 26, 31, 0.68), transparent 48%);
+  content: "";
+  pointer-events: none;
+}
+
+.bride-feature__overlay {
+  position: absolute;
+  right: clamp(1.4rem, 4vw, 2.5rem);
+  bottom: clamp(1.4rem, 4vw, 2.5rem);
+  left: clamp(1.4rem, 4vw, 2.5rem);
+  z-index: 2;
+  display: grid;
+  gap: 0.35rem;
+  color: var(--color-white);
+}
+
+.bride-feature__kicker {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.bride-feature__overlay strong {
+  font-family: var(--font-display);
+  font-size: clamp(2.35rem, 5vw, 4.8rem);
+  font-weight: 500;
+  line-height: 0.94;
+}
+
+.bride-feature__overlay small {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.bride-feature__side {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.bride-feature__small {
+  min-height: 0;
+}
+
+.bride-feature__small span {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  font-style: italic;
+  line-height: 1.05;
+}
+
+.bride-carousel {
+  position: relative;
+  z-index: 1;
+  margin-top: clamp(3.5rem, 7vw, 6rem);
+}
+
+.bride-carousel__header,
+.bride-carousel__controls {
+  display: flex;
+  align-items: center;
+}
+
+.bride-carousel__header {
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.bride-carousel__eyebrow {
+  color: var(--color-gold);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.bride-carousel h3 {
+  max-width: 18ch;
+  margin: 0.35rem 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.bride-carousel__controls {
+  gap: 0.7rem;
+}
+
+.bride-carousel__counter {
+  margin-right: 0.5rem;
+  color: var(--color-ink-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+}
+
+.bride-carousel__counter strong {
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  letter-spacing: 0;
+}
+
+.bride-swiper {
+  overflow: visible;
+}
+
+.bride-card {
+  height: auto;
+}
+
+.bride-card__button {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--color-rose-soft);
+  box-shadow: var(--shadow-xs);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.bride-card__button:hover {
+  transform: translateY(-0.35rem);
+  box-shadow: var(--shadow-md);
+}
+
+.bride-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5.15;
+  object-fit: cover;
+  transition: transform 850ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bride-card__button:hover img {
+  transform: scale(1.025);
+}
+
+.bride-card__button::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(37, 25, 31, 0.72), transparent);
+  content: "";
+}
+
+.bride-card__caption {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1.15rem;
+  left: 1.2rem;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--color-white);
+}
+
+.bride-card__caption small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+}
+
+.bride-card__caption strong {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.bride-progress {
+  position: relative;
+  height: 2px;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(77, 55, 66, 0.1);
+}
+
+.bride-progress .swiper-pagination-progressbar-fill {
+  background: linear-gradient(90deg, var(--color-gold), var(--color-rose));
+}
+
+@media (max-width: 900px) {
+  .bride-intro {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 1.8rem;
+  }
+
+  .bride-intro h2 {
+    max-width: 12ch;
+  }
+
+  .bride-intro__copy {
+    max-width: 38rem;
+  }
+
+  .bride-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .bride-feature__main {
+    min-height: 36rem;
+  }
+
+  .bride-feature__side {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+  }
+
+  .bride-feature__small {
+    min-height: 23rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .bride-intro h2 {
+    font-size: clamp(3.2rem, 16vw, 4.8rem);
+  }
+
+  .bride-feature {
+    padding: 0.65rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .bride-feature__main {
+    min-height: 31rem;
+  }
+
+  .bride-feature__side {
+    grid-template-columns: 1fr;
+  }
+
+  .bride-feature__small {
+    min-height: 27rem;
+  }
+
+  .bride-carousel__header {
+    align-items: flex-end;
+  }
+
+  .bride-carousel__controls {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .bride-carousel__counter {
+    width: 100%;
+    margin-right: 0;
+    text-align: right;
+  }
+}

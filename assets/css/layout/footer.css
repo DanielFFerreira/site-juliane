@@ -1,0 +1,107 @@
+.site-footer {
+  padding-block: 3.7rem;
+  border-top: 1px solid var(--color-line);
+  background: var(--surface-footer);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.8fr 0.65fr;
+  gap: 3rem;
+}
+
+.footer__brand p {
+  max-width: 20rem;
+  margin-top: 1rem;
+  color: var(--color-ink-soft);
+  font-size: 0.8rem;
+}
+
+.footer__links,
+.footer__meta {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+  color: var(--color-ink-soft);
+  font-size: 0.8rem;
+}
+
+.footer__links > span {
+  margin-bottom: 0.15rem;
+  color: var(--color-gold);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.footer__links a,
+.footer__meta a {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color var(--transition-fast);
+}
+
+.footer__links a:hover,
+.footer__meta a:hover {
+  color: var(--color-ink);
+}
+
+.footer__links i,
+.footer__meta i {
+  color: var(--color-rose-deep);
+  font-size: 1rem;
+}
+
+.footer__meta {
+  justify-items: end;
+}
+
+.footer__back-to-top {
+  min-height: 2.75rem;
+  justify-content: center;
+  padding-inline: 1rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-pill);
+  background: var(--surface-control);
+  color: var(--color-ink);
+  font-weight: 500;
+  transition:
+    color var(--transition-fast),
+    background var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-base);
+}
+
+.footer__back-to-top i {
+  font-size: 1rem;
+
+  transition: transform var(--transition-base);
+}
+
+.footer__back-to-top:hover {
+  border-color: var(--color-line-strong);
+
+  background: var(--surface-control-hover);
+
+  color: var(--color-gold);
+
+  transform: translateY(-2px);
+}
+
+.footer__back-to-top:hover i {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 780px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer__meta {
+    justify-items: start;
+  }
+}

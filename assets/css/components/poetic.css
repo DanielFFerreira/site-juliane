@@ -1,0 +1,91 @@
+.poetic-break {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.poetic-panel {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(3.4rem, 7vw, 6rem);
+    border-radius: var(--radius-xl);
+    background:
+        radial-gradient(circle at 88% 18%, rgba(215, 144, 170, 0.22), transparent 18rem),
+        linear-gradient(135deg, var(--color-plum), var(--color-plum-soft));
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+}
+
+.poetic-panel::after {
+    position: absolute;
+    top: -9rem;
+    right: -7rem;
+    width: 23rem;
+    height: 23rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    content: "";
+}
+
+.poetic-panel__icon {
+    display: grid;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: #e2c99e;
+    font-size: 1.25rem;
+}
+
+.poetic-panel blockquote {
+    position: relative;
+    z-index: 2;
+    max-width: 55rem;
+    font-family: var(--font-display);
+    font-size: clamp(2.55rem, 5vw, 4.65rem);
+    font-style: italic;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+}
+
+.poetic-panel blockquote em {
+    color: #e6c6d1;
+    font-weight: 500;
+}
+
+.poetic-panel__footer {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2.7rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.poetic-panel__footer i {
+    color: #e2c99e;
+    font-size: 1.1rem;
+}
+
+.poetic-panel__word {
+    position: absolute;
+    right: 1.8rem;
+    bottom: -2rem;
+    color: rgba(255, 255, 255, 0.05);
+    font-family: var(--font-display);
+    font-size: clamp(8rem, 19vw, 14rem);
+    font-style: italic;
+    line-height: 1;
+}
+
+@media (max-width: 620px) {
+    .poetic-panel {
+        border-radius: var(--radius-lg);
+    }
+}

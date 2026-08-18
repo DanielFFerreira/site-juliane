@@ -1,0 +1,58 @@
+.poems {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.61)),
+        radial-gradient(circle at 75% 18%, var(--color-lilac-soft), transparent 26rem);
+}
+
+.poem-list {
+    border-top: 1px solid var(--color-line);
+}
+
+.poem-item {
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr);
+    gap: 1.5rem;
+    padding-block: 2.7rem;
+    border-bottom: 1px solid var(--color-line);
+}
+
+.poem-item__meta {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    color: var(--color-gold);
+}
+
+.poem-item__meta span {
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+}
+
+.poem-item__meta i {
+    font-size: 1rem;
+}
+
+.poem-item__content h3 {
+    font-family: var(--font-display);
+    font-size: 2.15rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.poem-item__content p {
+    max-width: 48rem;
+    margin-top: 0.8rem;
+    color: var(--color-ink-soft);
+    line-height: 1.88;
+}
+
+@media (max-width: 580px) {
+    .poem-item {
+        grid-template-columns: 3.8rem minmax(0, 1fr);
+        gap: 0.6rem;
+    }
+
+    .poem-item__meta i {
+        display: none;
+    }
+}

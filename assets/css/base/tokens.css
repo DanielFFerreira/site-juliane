@@ -1,0 +1,86 @@
+:root {
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body: "Manrope", Arial, sans-serif;
+
+    --color-ink: #3f3038;
+    --color-ink-soft: #75666e;
+    --color-ink-muted: #9b8d94;
+    --color-paper: #fbf7f8;
+    --color-paper-strong: #fffdfd;
+    --color-white: #ffffff;
+    --color-rose: #d790aa;
+    --color-rose-deep: #b86f8b;
+    --color-rose-soft: #f5e4ea;
+    --color-lilac: #c7b5da;
+    --color-lilac-soft: #eee7f4;
+    --color-gold: #b89560;
+    --color-gold-soft: #e8d9bd;
+    --color-plum: #4d3742;
+    --color-plum-soft: #654b59;
+    --color-line: rgba(77, 55, 66, 0.13);
+    --color-line-strong: rgba(77, 55, 66, 0.2);
+
+    --surface-page: #fbf7f8;
+    --surface-card: rgba(255, 255, 255, 0.68);
+    --surface-card-strong: rgba(255, 255, 255, 0.88);
+    --surface-soft: rgba(255, 255, 255, 0.5);
+    --surface-control: rgba(255, 255, 255, 0.64);
+    --surface-control-hover: rgba(255, 255, 255, 0.9);
+    --surface-header: rgba(251, 247, 248, 0.78);
+    --surface-header-scrolled: rgba(251, 247, 248, 0.93);
+    --surface-footer: rgba(255, 255, 255, 0.34);
+
+    --shadow-xs: 0 8px 24px rgba(66, 45, 55, 0.06);
+    --shadow-sm: 0 18px 45px rgba(66, 45, 55, 0.08);
+    --shadow-md: 0 28px 70px rgba(66, 45, 55, 0.11);
+
+    --radius-sm: 14px;
+    --radius-md: 22px;
+    --radius-lg: 32px;
+    --radius-xl: 42px;
+    --radius-pill: 999px;
+
+    --container: 1180px;
+    --header-height: 84px;
+    --section-space: clamp(5.5rem, 9vw, 8.5rem);
+
+    --transition-fast: 220ms ease;
+    --transition-base: 360ms cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-slow: 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+
+    --color-ink: #f3eaee;
+    --color-ink-soft: #cbbdc4;
+    --color-ink-muted: #a99aa2;
+    --color-paper: #191416;
+    --color-paper-strong: #241d21;
+    --color-white: #fffafa;
+    --color-rose: #e3a2ba;
+    --color-rose-deep: #eea8c2;
+    --color-rose-soft: #412c35;
+    --color-lilac: #cdb8df;
+    --color-lilac-soft: #332a3a;
+    --color-gold: #d8b77e;
+    --color-gold-soft: #6d5a3c;
+    --color-plum: #2c2026;
+    --color-plum-soft: #4b3741;
+    --color-line: rgba(243, 234, 238, 0.13);
+    --color-line-strong: rgba(243, 234, 238, 0.22);
+
+    --surface-page: #191416;
+    --surface-card: rgba(43, 34, 39, 0.76);
+    --surface-card-strong: rgba(48, 38, 43, 0.92);
+    --surface-soft: rgba(38, 30, 34, 0.68);
+    --surface-control: rgba(48, 39, 44, 0.82);
+    --surface-control-hover: rgba(65, 52, 59, 0.95);
+    --surface-header: rgba(25, 20, 22, 0.82);
+    --surface-header-scrolled: rgba(25, 20, 22, 0.95);
+    --surface-footer: rgba(33, 26, 30, 0.72);
+
+    --shadow-xs: 0 8px 24px rgba(0, 0, 0, 0.18);
+    --shadow-sm: 0 18px 45px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 28px 70px rgba(0, 0, 0, 0.3);
+}
