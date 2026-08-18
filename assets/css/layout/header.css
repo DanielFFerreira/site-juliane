@@ -104,10 +104,21 @@
         --header-height: 74px;
     }
 
-    .nav-toggle {
+    .header__inner {
+        gap: 0.75rem;
+    }
+
+    .site-header .brand,
+    .header__actions {
         position: relative;
         z-index: 102;
+    }
+
+    .nav-toggle {
         display: grid;
+        width: 2.75rem;
+        height: 2.75rem;
+        flex: 0 0 auto;
         place-items: center;
     }
 
@@ -116,35 +127,70 @@
         inset: 0;
         z-index: 101;
         display: grid;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        min-height: 100vh;
         align-content: center;
         justify-items: center;
-        gap: 1.35rem;
-        padding: 5rem 1.5rem;
+        gap: 1rem;
+        padding: calc(var(--header-height) + 1.5rem) 1.5rem 2rem;
+        overflow-y: auto;
+        overscroll-behavior: contain;
         background:
-            radial-gradient(circle at 50% 25%, var(--color-rose-soft), transparent 18rem),
-            var(--surface-header-scrolled);
+            radial-gradient(circle at 50% 20%, var(--color-rose-soft), transparent 18rem),
+            var(--color-paper);
         opacity: 0;
+        visibility: hidden;
         pointer-events: none;
-        transform: translateY(-0.6rem);
+        transform: translateY(-0.5rem);
         transition:
             opacity var(--transition-base),
+            visibility 0s linear var(--transition-base),
             transform var(--transition-base);
     }
 
     .site-nav.is-open {
         opacity: 1;
+        visibility: visible;
         pointer-events: auto;
         transform: translateY(0);
+        transition-delay: 0s;
     }
 
     .site-nav a {
         font-family: var(--font-display);
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 500;
+        line-height: 1.15;
+        text-align: center;
     }
 
     .site-nav__special {
         min-height: 3rem;
         padding-inline: 1.2rem;
+    }
+
+    body.is-menu-open .site-header {
+        border-color: transparent;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .header__inner {
+        gap: 0.5rem;
+    }
+
+    .site-nav {
+        gap: 0.8rem;
+        padding-inline: 1rem;
+    }
+
+    .site-nav a {
+        font-size: 1.65rem;
     }
 }
