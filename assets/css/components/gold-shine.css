@@ -1,0 +1,91 @@
+/* Metallic treatment shared by every textual use of the gold accent. */
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+    :where(
+        .brand__mark,
+        .eyebrow:not(.eyebrow--light),
+        .bride-intro h2 em,
+        .bride-intro__note,
+        .bride-carousel__eyebrow,
+        .footer__links > span,
+        .footer__back-to-top:hover,
+        .detail-card__index,
+        .essence-quote i,
+        .gallery-shell__divider,
+        .gallery-shell__hint i,
+        .gallery-card__category,
+        .gallery-shell__footer i,
+        .hero-photo__index,
+        .hero-photo__caption i,
+        .hero-stamp,
+        .scroll-cue i,
+        .letter__aside,
+        .letter__signature,
+        .memory-card__number,
+        .carousel-controls__status i,
+        .poem-item__meta,
+        .theme-toggle:hover
+    ) {
+        background-image: linear-gradient(
+            110deg,
+            #8f611f 0%,
+            #c99535 18%,
+            #ffe59a 36%,
+            #d8b77e 50%,
+            #fff4bd 64%,
+            #c38a2d 82%,
+            #8f611f 100%
+        );
+        background-position: 0% 50%;
+        background-size: 240% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 0.18rem rgba(238, 190, 91, 0.28));
+        animation: goldShine 5.5s ease-in-out infinite;
+    }
+}
+
+@keyframes goldShine {
+    0%,
+    100% {
+        background-position: 0% 50%;
+        filter: drop-shadow(0 0 0.12rem rgba(238, 190, 91, 0.2));
+    }
+
+    50% {
+        background-position: 100% 50%;
+        filter: drop-shadow(0 0 0.32rem rgba(255, 218, 126, 0.52));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :where(
+        .brand__mark,
+        .eyebrow:not(.eyebrow--light),
+        .bride-intro h2 em,
+        .bride-intro__note,
+        .bride-carousel__eyebrow,
+        .footer__links > span,
+        .footer__back-to-top:hover,
+        .detail-card__index,
+        .essence-quote i,
+        .gallery-shell__divider,
+        .gallery-shell__hint i,
+        .gallery-card__category,
+        .gallery-shell__footer i,
+        .hero-photo__index,
+        .hero-photo__caption i,
+        .hero-stamp,
+        .scroll-cue i,
+        .letter__aside,
+        .letter__signature,
+        .memory-card__number,
+        .carousel-controls__status i,
+        .poem-item__meta,
+        .theme-toggle:hover
+    ) {
+        animation: none;
+        background-position: 50% 50%;
+    }
+}
