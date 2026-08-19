@@ -13,9 +13,9 @@
     border: 1px solid rgba(184, 149, 96, 0.46);
     border-radius: 50%;
     color: var(--color-gold);
-    font-family: var(--font-display);
-    font-size: 1.55rem;
-    font-style: italic;
+    font-family: var(--font-accent);
+    font-size: 2rem;
+    font-style: normal;
 }
 
 .brand__copy {

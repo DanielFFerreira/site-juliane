@@ -99,8 +99,9 @@
   display: grid;
   margin-top: 2rem;
   color: var(--color-gold);
-  font-family: var(--font-display);
-  font-style: italic;
+  font-family: var(--font-accent);
+  font-size: 1.2rem;
+  font-style: normal;
 }
 
 .letter__signature strong {

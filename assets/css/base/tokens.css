@@ -1,5 +1,6 @@
 :root {
     --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-accent: "Alex Brush", "Cormorant Garamond", cursive;
     --font-body: "Manrope", Arial, sans-serif;
 
     --color-ink: #3f3038;
