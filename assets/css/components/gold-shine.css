@@ -3,11 +3,7 @@
     :where(
         .brand__mark,
         .eyebrow:not(.eyebrow--light),
-        .bride-intro h2 em,
-        .bride-intro__note,
-        .bride-carousel__eyebrow,
         .footer__links > span,
-        .footer__back-to-top:hover,
         .detail-card__index,
         .essence-quote i,
         .gallery-shell__divider,
@@ -22,8 +18,7 @@
         .letter__signature,
         .memory-card__number,
         .carousel-controls__status i,
-        .poem-item__meta,
-        .theme-toggle:hover
+        .poem-item__meta
     ) {
         background-image: linear-gradient(
             110deg,
@@ -63,11 +58,7 @@
     :where(
         .brand__mark,
         .eyebrow:not(.eyebrow--light),
-        .bride-intro h2 em,
-        .bride-intro__note,
-        .bride-carousel__eyebrow,
         .footer__links > span,
-        .footer__back-to-top:hover,
         .detail-card__index,
         .essence-quote i,
         .gallery-shell__divider,
@@ -82,8 +73,7 @@
         .letter__signature,
         .memory-card__number,
         .carousel-controls__status i,
-        .poem-item__meta,
-        .theme-toggle:hover
+        .poem-item__meta
     ) {
         animation: none;
         background-position: 50% 50%;

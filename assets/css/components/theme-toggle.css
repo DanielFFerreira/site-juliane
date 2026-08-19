@@ -41,12 +41,6 @@ html[data-theme="dark"] .poems {
         radial-gradient(circle at 78% 20%, var(--color-lilac-soft), transparent 24rem);
 }
 
-html[data-theme="dark"] .bride-section {
-    background:
-        linear-gradient(180deg, rgba(33, 26, 30, 0.78), rgba(25, 20, 22, 0.9)),
-        radial-gradient(circle at 85% 10%, rgba(216, 183, 126, 0.12), transparent 26rem);
-}
-
 html[data-theme="dark"] .juliane-gallery {
     background:
         linear-gradient(145deg, rgba(43, 34, 39, 0.9), rgba(25, 20, 22, 0.84)),

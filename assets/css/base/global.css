@@ -34,10 +34,6 @@ html[data-theme="dark"] body {
     var(--surface-page);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body.is-menu-open {
   overflow: hidden;
 }
