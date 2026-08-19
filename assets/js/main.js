@@ -5,6 +5,7 @@ import { initMomentsCarousel } from "./modules/carousel.js";
 import { setCurrentYear } from "./modules/year.js";
 import { initTheme } from "./modules/theme.js";
 import { initJulianeGallery } from "./modules/gallery.js";
+import { initCookingAccordion } from "./modules/cooking-accordion.js";
 
 function initPage() {
     initTheme();
@@ -13,6 +14,7 @@ function initPage() {
     initReveal();
     initMomentsCarousel();
     initJulianeGallery();
+    initCookingAccordion();
     setCurrentYear();
 }
 

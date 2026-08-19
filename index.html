@@ -391,10 +391,25 @@
 
         <section class="section cooking" id="culinaria" aria-labelledby="cooking-title">
             <div class="container cooking__grid">
-                <figure class="cooking__photo reveal">
-                    <img src="assets/images/cozinhar.png" alt="Juliane preparando uma receita na cozinha"
-                        loading="lazy">
-                </figure>
+                <div class="cooking__accordion reveal" data-cooking-accordion>
+                    <button class="cooking__photo is-active" type="button" aria-pressed="true">
+                        <img src="assets/images/cozinhar.png" alt="Juliane preparando uma receita na cozinha"
+                            loading="lazy">
+                    </button>
+                    <button class="cooking__photo" type="button" aria-pressed="false">
+                        <img src="assets/images/cozinheira1.png" alt="Um detalhe delicado do cotidiano de Juliane"
+                            loading="lazy">
+                    </button>
+                    <button class="cooking__photo" type="button" aria-pressed="false">
+                        <img src="assets/images/cozinheira2.png" alt="Um momento de afeto em família" loading="lazy">
+                    </button>
+                    <button class="cooking__photo" type="button" aria-pressed="false">
+                        <img src="assets/images/cozinheira3.png" alt="Um gesto de carinho e bondade" loading="lazy">
+                    </button>
+                    <button class="cooking__photo" type="button" aria-pressed="false">
+                        <img src="assets/images/cozinheira4.png" alt="Um gesto de carinho e bondade" loading="lazy">
+                    </button>
+                </div>
 
                 <div class="cooking__content reveal reveal--delay-1">
                     <div class="section-heading">
@@ -483,25 +498,7 @@
 
                 <div class="swiper moments-swiper js-moments-swiper reveal reveal--delay-1">
                     <div class="swiper-wrapper">
-                        <article class="swiper-slide memory-card">
-                            <div class="memory-card__media">
-                                <img src="assets/images/cozinhar.png" alt="Juliane preparando uma receita">
 
-                                <span class="memory-card__badge">
-                                    <i class="ri-restaurant-2-line" aria-hidden="true"></i>
-                                    Cozinhar
-                                </span>
-                            </div>
-
-                            <div class="memory-card__body">
-                                <span class="memory-card__number">01</span>
-                                <h3>Cuidado servido à mesa.</h3>
-                                <p>
-                                    Há atenção na escolha, paciência no preparo e alegria em dividir o que ficou pronto.
-                                    Cozinhar é uma forma muito sua de demonstrar atenção.
-                                </p>
-                            </div>
-                        </article>
 
                         <article class="swiper-slide memory-card">
                             <div class="memory-card__media">
