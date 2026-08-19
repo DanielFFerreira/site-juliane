@@ -1,0 +1,99 @@
+.faith {
+  position: relative;
+  overflow: hidden;
+  border-block: 1px solid var(--color-line);
+  background: var(--surface-soft);
+}
+
+.faith::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: var(--color-line);
+  content: "";
+}
+
+.faith__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: center;
+}
+
+.faith__heading h2 {
+  max-width: 34rem;
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(3.4rem, 6vw, 6.3rem);
+  font-weight: 500;
+  line-height: 0.93;
+}
+
+.faith__heading h2 em {
+  display: block;
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.faith__content {
+  position: relative;
+  padding-block: clamp(1rem, 3vw, 2rem);
+  padding-left: 2rem;
+}
+
+.faith__quote-mark {
+  display: block;
+  margin-bottom: 1.2rem;
+  color: var(--color-gold);
+  font-size: 2rem;
+}
+
+.faith__content blockquote {
+  max-width: 38rem;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.4vw, 3.25rem);
+  font-style: italic;
+  line-height: 1.12;
+}
+
+.faith__content cite {
+  display: block;
+  margin-top: 1.3rem;
+  color: var(--color-gold);
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.faith__content p {
+  max-width: 35rem;
+  margin-top: 2.4rem;
+  color: var(--color-ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+  .faith::before {
+    display: none;
+  }
+
+  .faith__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .faith__heading h2 {
+    max-width: 28rem;
+  }
+
+  .faith__content {
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--color-line);
+  }
+}
