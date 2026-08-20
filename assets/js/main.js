@@ -7,6 +7,7 @@ import { initTheme } from "./modules/theme.js";
 import { initJulianeGallery } from "./modules/gallery.js";
 import { initCookingAccordion } from "./modules/cooking-accordion.js";
 import { initBackToTop } from "./modules/back-to-top.js";
+import { initLetterChapters } from "./modules/letter-chapters.js";
 
 function initPage() {
     initTheme();
@@ -17,6 +18,7 @@ function initPage() {
     initJulianeGallery();
     initCookingAccordion();
     initBackToTop();
+    initLetterChapters();
     setCurrentYear();
 }
 
