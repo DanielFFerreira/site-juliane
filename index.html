@@ -22,7 +22,7 @@
         })();
     </script>
 
-    <title>Juliane Leal Rodrigues | Feito com carinho</title>
+    <title>Juliane Leal Rodrigues | Algumas coisas que queria dizer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -391,23 +391,31 @@
 
         <section class="section cooking" id="culinaria" aria-labelledby="cooking-title">
             <div class="container cooking__grid">
-                <div class="cooking__accordion reveal" data-cooking-accordion>
-                    <button class="cooking__photo is-active" type="button" aria-pressed="true">
-                        <img src="assets/images/cozinhar.png" alt="Juliane preparando uma receita na cozinha"
+                <div class="cooking__accordion reveal" data-cooking-accordion aria-describedby="cooking-hint">
+                    <button class="cooking__photo is-active" type="button" aria-pressed="true"
+                        aria-label="Destacar foto de Juliane preparando uma receita">
+                        <img src="assets/images/cozinhar.webp" alt="Juliane preparando uma receita na cozinha"
                             loading="lazy">
                     </button>
-                    <button class="cooking__photo" type="button" aria-pressed="false">
-                        <img src="assets/images/cozinheira1.png" alt="Um detalhe delicado do cotidiano de Juliane"
+                    <button class="cooking__photo" type="button" aria-pressed="false"
+                        aria-label="Destacar foto de Juliane decorando cupcakes">
+                        <img src="assets/images/cozinheira1.webp" alt="Juliane decorando cupcakes com frutas vermelhas"
                             loading="lazy">
                     </button>
-                    <button class="cooking__photo" type="button" aria-pressed="false">
-                        <img src="assets/images/cozinheira2.png" alt="Um momento de afeto em família" loading="lazy">
+                    <button class="cooking__photo" type="button" aria-pressed="false"
+                        aria-label="Destacar foto de Juliane cozinhando no fogão">
+                        <img src="assets/images/cozinheira2.webp" alt="Juliane mexendo uma panela no fogão"
+                            loading="lazy">
                     </button>
-                    <button class="cooking__photo" type="button" aria-pressed="false">
-                        <img src="assets/images/cozinheira3.png" alt="Um gesto de carinho e bondade" loading="lazy">
+                    <button class="cooking__photo" type="button" aria-pressed="false"
+                        aria-label="Destacar foto de Juliane preparando um bolo">
+                        <img src="assets/images/cozinheira3.webp" alt="Juliane misturando a massa de um bolo"
+                            loading="lazy">
                     </button>
-                    <button class="cooking__photo" type="button" aria-pressed="false">
-                        <img src="assets/images/cozinheira4.png" alt="Um gesto de carinho e bondade" loading="lazy">
+                    <button class="cooking__photo" type="button" aria-pressed="false"
+                        aria-label="Destacar foto de Juliane cortando tomates">
+                        <img src="assets/images/cozinheira4.webp" alt="Juliane cortando tomates frescos na cozinha"
+                            loading="lazy">
                     </button>
                 </div>
 
@@ -424,14 +432,14 @@
                         </h2>
 
                         <p>
-                            Você fala de cozinhar de um jeito simples, como parte do seu dia. Escolher os
-                            ingredientes, pensar no que vai preparar, cuidar do tempo e fazer tudo com atenção.
-                            Parece uma coisa comum, mas diz bastante sobre você.
+                            Você fala de cozinhar como parte do seu dia. Escolher os ingredientes, pensar no que vai
+                            preparar, organizar o tempo e fazer tudo com atenção. Parece comum, mas diz bastante
+                            sobre o seu jeito.
                         </p>
 
                         <p>
                             Talvez seja justamente isso que torna esse detalhe tão bonito. Não é só o que fica
-                            pronto no final. É o cuidado que aparece durante o processo.
+                            pronto no final. É a atenção que aparece durante o processo.
                         </p>
                     </div>
 
@@ -455,7 +463,7 @@
 
                             <div>
                                 <h3>Preparar</h3>
-                                <p>Tem atenção no tempo, nos detalhes e naquele cuidado que aparece antes mesmo de
+                                <p>Tem atenção no tempo, nos detalhes e naquela calma que aparece antes mesmo de
                                     servir.</p>
                             </div>
                         </article>
@@ -473,7 +481,11 @@
                         </article>
                     </div>
 
-                    <p class="cooking__highlight">O cuidado também aparece antes da primeira garfada.</p>
+                    <p class="cooking__highlight">Antes da primeira garfada, já existe intenção.</p>
+                    <p class="cooking__hint" id="cooking-hint">
+                        <i class="ri-cursor-line" aria-hidden="true"></i>
+                        Toque em uma foto para destacá-la.
+                    </p>
                 </div>
             </div>
         </section>
@@ -487,12 +499,12 @@
                             <span>Cenas do cotidiano</span>
                         </div>
 
-                        <h2 id="moments-title">Quatro cenas que me fazem pensar em você.</h2>
+                        <h2 id="moments-title">Três cenas que me fazem pensar em você.</h2>
                     </div>
 
                     <p>
-                        Estas cenas mostram partes do seu cotidiano: o cuidado na cozinha, os gatos por perto,
-                        a convivência com a família e o respeito presente nas relações.
+                        Estas cenas mostram partes do seu cotidiano: os gatos por perto, a convivência com a família
+                        e o afeto presente nas relações.
                     </p>
                 </div>
 
@@ -502,7 +514,7 @@
 
                         <article class="swiper-slide memory-card">
                             <div class="memory-card__media">
-                                <img src="assets/images/bichinhos.png"
+                                <img src="assets/images/bichinhos.webp"
                                     alt="Juliane em um momento de carinho com os gatos">
 
                                 <span class="memory-card__badge">
@@ -512,7 +524,7 @@
                             </div>
 
                             <div class="memory-card__body">
-                                <span class="memory-card__number">02</span>
+                                <span class="memory-card__number">01</span>
                                 <h3>Um carinho sem cerimônia.</h3>
                                 <p>
                                     Com eles, não é preciso explicar nada: basta chegar perto, respeitar o tempo
@@ -523,7 +535,7 @@
 
                         <article class="swiper-slide memory-card">
                             <div class="memory-card__media">
-                                <img src="assets/images/familia.png" alt="Juliane reunida com a família">
+                                <img src="assets/images/familia.webp" alt="Juliane reunida com a família">
 
                                 <span class="memory-card__badge">
                                     <i class="ri-home-heart-line" aria-hidden="true"></i>
@@ -532,7 +544,7 @@
                             </div>
 
                             <div class="memory-card__body">
-                                <span class="memory-card__number">03</span>
+                                <span class="memory-card__number">02</span>
                                 <h3>Onde você pode ser você.</h3>
                                 <p>
                                     Família também é isso: apelidos antigos, conversas atravessadas, domingos comuns
@@ -543,7 +555,7 @@
 
                         <article class="swiper-slide memory-card">
                             <div class="memory-card__media">
-                                <img src="assets/images/amores.png" alt="Juliane em um registro afetivo">
+                                <img src="assets/images/amores.webp" alt="Juliane em um registro afetivo">
 
                                 <span class="memory-card__badge">
                                     <i class="ri-heart-2-line" aria-hidden="true"></i>
@@ -552,7 +564,7 @@
                             </div>
 
                             <div class="memory-card__body">
-                                <span class="memory-card__number">04</span>
+                                <span class="memory-card__number">03</span>
                                 <h3>Afeto também é respeito.</h3>
                                 <p>
                                     Gostar de alguém também é saber ouvir, respeitar limites e cuidar sem prender.
@@ -934,7 +946,8 @@
             <div class="container">
                 <div class="mosaic-grid">
                     <figure class="mosaic-card mosaic-card--tall reveal">
-                        <img src="assets/images/inteligencia.png" alt="Espaço reservado para um detalhe especial">
+                        <img src="assets/images/inteligencia.webp"
+                            alt="Juliane em um momento tranquilo de leitura e reflexão">
                         <figcaption>
                             <span>Inteligência</span>
                             <p>Você observa, aprende rápido e costuma perceber relações que passam despercebidas.</p>
@@ -964,7 +977,7 @@
                     </article>
 
                     <figure class="mosaic-card reveal">
-                        <img src="assets/images/detalhes.png" alt="Juliane em uma cena de afeto">
+                        <img src="assets/images/detalhes.webp" alt="Juliane em uma cena de afeto">
                         <figcaption>
                             <span>Bondade</span>
                             <p>Você ajuda de um modo bonito: com respeito, sem fazer a outra pessoa se sentir menor.</p>
@@ -972,7 +985,7 @@
                     </figure>
 
                     <figure class="mosaic-card reveal reveal--delay-1">
-                        <img src="assets/images/bondade.png" alt="Juliane em uma cena tranquila do cotidiano">
+                        <img src="assets/images/bondade.webp" alt="Juliane em uma cena tranquila do cotidiano">
                         <figcaption>
                             <span>Presente</span>
                             <p>Há valor no agora, nos gestos sinceros e no respeito oferecido sem cobrança.</p>
@@ -980,7 +993,7 @@
                     </figure>
 
                     <figure class="mosaic-card reveal reveal--delay-1">
-                        <img src="assets/images/juliane-olhando-baixo.png"
+                        <img src="assets/images/juliane-olhando-baixo.webp"
                             alt="Juliane em uma cena tranquila do cotidiano">
                         <figcaption>
                             <span>Carisma</span>
@@ -1149,9 +1162,9 @@
 
             <div class="footer__links">
 
-                <a href="https://www.instagram.com/julianelealrodrigues.rodrigues/" aria-label="Instagram">
-                    <i class="ri-instagram-line" aria-hidden="true"></i>
-                    <span>Instagram</span>
+                <a href="#galeria" aria-label="Ir para a galeria">
+                    <i class="ri-gallery-line" aria-hidden="true"></i>
+                    <span>Galeria</span>
                 </a>
             </div>
 
@@ -1161,7 +1174,7 @@
                     © <span id="current-year"></span>
                 </span>
 
-                <a class="footer__back-to-top" href="#topo" aria-label="Voltar ao topo da página">
+                <a class="footer__back-to-top js-back-to-top" href="#topo" aria-label="Voltar ao topo da página">
                     <i class="ri-arrow-up-line" aria-hidden="true"></i>
                     <span>Voltar ao topo</span>
                 </a>

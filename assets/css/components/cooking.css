@@ -106,6 +106,22 @@
     line-height: 1.4;
 }
 
+.cooking__hint {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: -1rem;
+    color: var(--color-ink-muted);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+}
+
+.cooking__hint i {
+    color: var(--color-rose-deep);
+    font-size: 0.95rem;
+}
+
 @media (max-width: 900px) {
     .cooking__grid {
         grid-template-columns: 1fr;

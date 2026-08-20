@@ -7,10 +7,13 @@ Landing page afetiva e responsiva dedicada a Juliane Leal Rodrigues, construída
 - tema claro e escuro com preferência persistida;
 - navegação responsiva;
 - carrossel de momentos;
-- seção Noiva com nove fotografias;
+- seção de culinária com galeria sanfonada acessível;
+- seção de frases e poemas;
 - galeria com oito retratos e lightbox nativo;
 - animações de entrada com respeito a `prefers-reduced-motion`;
 - conteúdo editorial em português.
+
+As imagens principais são servidas em WebP para reduzir o tempo de carregamento em dispositivos móveis.
 
 ## Estrutura
 
